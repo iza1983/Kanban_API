@@ -18,6 +18,9 @@ function Column(id, name) {
 
     columnAddCard.click(function(event) {
       var cardName = prompt("Wpisz nazwę karty");
+	  if (cardName === null) {
+        return;
+	  }
       event.preventDefault();
       $.ajax({
         url: baseUrl + '/card',
