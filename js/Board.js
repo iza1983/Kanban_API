@@ -10,10 +10,10 @@ var board = {
 $('.create-column')
   .click(function() {
     var columnName = prompt('Wpisz nazwę kolumny');
-    if (columnName === null) 
+    if (columnName === null) { 
       return;
     }
-    $.ajax({
+  $.ajax({
       url: baseUrl + '/column',
       method: 'POST',
       data: {
