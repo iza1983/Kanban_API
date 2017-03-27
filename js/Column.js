@@ -16,7 +16,7 @@ function Column(id, name) {
       self.deleteColumn();
     });
 
-    columnAddCard.click(function(event) {
+    columnAddCard.click(function() {
       var cardName = prompt("Wpisz nazwę karty");
       if (cardName === null) {
         return;
